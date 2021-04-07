@@ -1,0 +1,15 @@
+name: SupremeCobbleGens
+main: io.github.levtey.SupremeCobbleGens.SupremeCobbleGens
+api-version: 1.16
+version: 0.0.1
+author: levtey
+depend: [BentoBox]
+commands:
+  scg:
+    usage: /<command> help
+    permission: scg.gui
+permissions:
+  scg.gui:
+    default: true
+  scg.admin:
+    default: op

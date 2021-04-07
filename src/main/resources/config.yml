@@ -1,0 +1,100 @@
+gui:
+  name: ' &l &1Cobble Generator Upgrades'
+  filler:
+    material: black_stained_glass_pane
+    name: "&r"
+generators:
+  tier_1:
+    name: "&3Tier &b1 &3Generator"
+    icon: cobblestone
+    blocks:
+      cobblestone: 100
+  tier_2:
+    name: "&3Tier &b2 &3Generator"
+    icon: coal_ore
+    blocks:
+      cobblestone: 97.9
+      coal_ore: 2
+      iron_ore: 0.1
+  tier_3:
+    name: "&3Tier &b3 &3Generator"
+    icon: iron_ore
+    blocks:
+      cobblestone: 96.75
+      coal_ore: 3
+      iron_ore: 0.25
+  tier_4:
+    name: "&3Tier &b4 &3Generator"
+    icon: gold_ore
+    blocks:
+      cobblestone: 93.4
+      coal_ore: 5
+      iron_ore: 1
+      gold_ore: 0.5
+      redstone_ore: 0.1
+  tier_5:
+    name: "&3Tier &b5 &3Generator"
+    icon: redstone_ore
+    blocks:
+      cobblestone: 92.8
+      coal_ore: 5
+      iron_ore: 1.25
+      gold_ore: 0.75
+      redstone_ore: 0.2
+  tier_6:
+    name: "&3Tier &b6 &3Generator"
+    icon: lapis_ore
+    blocks:
+      cobblestone: 91.4
+      coal_ore: 5
+      iron_ore: 2
+      gold_ore: 1
+      redstone_ore: 0.5
+      lapis_ore: 0.1
+  tier_7:
+    name: "&3Tier &b7 &3Generator"
+    icon: diamond_ore
+    blocks:
+      cobblestone: 88.4
+      coal_ore: 5
+      iron_ore: 3
+      gold_ore: 2
+      redstone_ore: 1
+      lapis_ore: 0.5
+      diamond_ore: 0.1
+  tier_8:
+    name: "&3Tier &b8 &3Generator"
+    icon: emerald_ore
+    blocks:
+      cobblestone: 85.15
+      coal_ore: 5
+      iron_ore: 4
+      gold_ore: 3
+      redstone_ore: 1.5
+      lapis_ore: 0.75
+      diamond_ore: 0.5
+      emerald_ore: 0.1
+  tier_9:
+    name: "&3Tier &b9 &3Generator"
+    icon: emerald_ore
+    blocks:
+      cobblestone: 80.75
+      coal_ore: 6
+      iron_ore: 5
+      gold_ore: 4
+      redstone_ore: 2
+      lapis_ore: 1.25
+      diamond_ore: 0.75
+      emerald_ore: 0.25
+  tier_10:
+    name: "&3Tier &b10 &3Generator"
+    icon: emerald_ore
+    blocks:
+      cobblestone: 71
+      coal_ore: 8
+      iron_ore: 7
+      gold_ore: 6
+      redstone_ore: 4
+      lapis_ore: 2
+      diamond_ore: 1.5
+      emerald_ore: 0.5
