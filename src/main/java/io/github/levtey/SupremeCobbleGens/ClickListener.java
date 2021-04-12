@@ -31,8 +31,10 @@ public class ClickListener implements Listener {
 		GenMenu menu = (GenMenu) holder;
 		Player player = (Player) ent;
 		int clickedSlot = evt.getSlot();
-		if (menu.allowedGens.size() <= clickedSlot) return;
-		if (plugin.setTier(player, menu.allowedGens.get(clickedSlot))) {
+		if (menu.gens.size() <= clickedSlot) return;
+		String gen = menu.gens.get(clickedSlot);
+		if (!menu.isGenAllowed(player, gen)) return;
+		if (plugin.setTier(player, menu.gens.get(clickedSlot))) {
 			new GenMenu(plugin, player);
 		}
 	}

@@ -3,6 +3,7 @@ gui:
   filler:
     material: black_stained_glass_pane
     name: "&r"
+  lockedMaterial: barrier
 generators:
   tier_1:
     name: "&3Tier &b1 &3Generator"
