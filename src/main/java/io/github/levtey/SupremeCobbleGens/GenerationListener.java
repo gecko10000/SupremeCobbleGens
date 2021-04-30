@@ -12,6 +12,7 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.Levelled;
+import org.bukkit.block.data.Waterlogged;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockFormEvent;
@@ -45,7 +46,13 @@ public class GenerationListener implements Listener {
 				|| destType == Material.CAVE_AIR
 				|| destType == Material.VOID_AIR) {
 			for (BlockFace face : waterFaces) {
-				if (dest.getRelative(face).getType() != Material.WATER) continue;
+				Block relative = dest.getRelative(face);
+				if (relative.getBlockData() instanceof Waterlogged && ((Waterlogged) relative.getBlockData()).isWaterlogged()) {
+					validCobble = true;
+					break;
+				}
+				if (relative.getType() != Material.WATER) continue;
+				//test this!
 				validCobble = true;
 				break;
 			}
