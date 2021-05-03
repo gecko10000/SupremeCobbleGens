@@ -52,7 +52,6 @@ public class GenerationListener implements Listener {
 					break;
 				}
 				if (relative.getType() != Material.WATER) continue;
-				//test this!
 				validCobble = true;
 				break;
 			}
