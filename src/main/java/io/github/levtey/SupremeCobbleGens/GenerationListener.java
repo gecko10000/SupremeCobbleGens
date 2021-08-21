@@ -25,7 +25,7 @@ import world.bentobox.bentobox.database.objects.Island;
 public class GenerationListener implements Listener {
 	
 	private SupremeCobbleGens plugin;
-	private final Set<BlockFace> waterFaces = EnumSet.of(BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST);
+	private final Set<BlockFace> waterFaces = EnumSet.of(BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST, BlockFace.UP);
 	private final Set<BlockFace> lavaFaces = EnumSet.of(BlockFace.DOWN, BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST);
 	
 	public GenerationListener(SupremeCobbleGens plugin) {
